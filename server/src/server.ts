@@ -7,6 +7,7 @@ import morgan from "morgan";
 import passport from "passport";
 import session from "express-session";
 import mongoose from "mongoose";
+import authRoutes from "./routes/authRoutes";
 
 const app: Application = express();
 const origin = "http://localhost:5173";
@@ -26,6 +27,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors({ origin, credentials: true }));
 app.use(morgan("dev"));
 app.use(helmet());
+
+// routes
+app.use("/auth", authRoutes);
 
 // connect to mongodb
 mongoose
