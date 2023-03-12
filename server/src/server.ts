@@ -8,9 +8,9 @@ import passport from "passport";
 import session from "express-session";
 import mongoose from "mongoose";
 import authRoutes from "./routes/authRoutes";
-
+import "./passport";
 const app: Application = express();
-const origin = "http://localhost:5173";
+const origin = "http://localhost:5175";
 
 // middleware
 app.use(
