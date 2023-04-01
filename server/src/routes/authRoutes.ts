@@ -1,7 +1,7 @@
 import express, { Router, Request, Response } from "express";
 import passport from "passport";
 
-const clientURL: string = "http://localhost:5175";
+const clientURL: string = "http://localhost:5173";
 
 const router: Router = express.Router();
 

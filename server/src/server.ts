@@ -10,7 +10,7 @@ import mongoose from "mongoose";
 import authRoutes from "./routes/authRoutes";
 import "./passport";
 const app: Application = express();
-const origin = "http://localhost:5175";
+const origin = "http://localhost:5173";
 
 // middleware
 app.use(
